@@ -54,5 +54,6 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  get 'posts/:id', to: 'posts#show' 
+  # get 'posts/:id', to: 'posts#show' the below is using RESTful routes version of routing
+  resources :posts, only: :show
 end
